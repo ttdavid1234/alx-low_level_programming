@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Prints a serie of numbers with commas
  *
  * Return: Always (Success);
@@ -25,4 +24,3 @@ int main(void)
 
 	return (0);
 }
-
