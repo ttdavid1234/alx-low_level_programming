@@ -1,20 +1,26 @@
-Singly linked lists
-Alx Learning Objectives
-When and why using linked lists vs arrays
-How to build and use linked lists
-OA
+# Singly linked lists
 
-Tasks
-Print list
+# Alx Learning Objectives
+
+* When and why using linked lists vs arrays
+* How to build and use linked lists
+
+OA
+# Tasks
+
+## Print list
+
 Write a function that prints all the elements of a list_t list.
 
-Prototype: size_t print_list(const list_t *h);
-Return: the number of nodes
-Format: see example
-If str is NULL, print [0] (nil)
-You are allowed to use printf
-Solution: 0-print_list.c
+* Prototype: `size_t print_list(const list_t *h);`
+* Return: the number of nodes
+* Format: see example
+* If `str` is `NULL`, print `[0] (nil)`
+* You are allowed to use `printf`
 
+**Solution:** [0-print_list.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/0-print_list.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 0-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -66,12 +72,17 @@ $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ ./a
 [5] World
 -> 2 elements
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$
-List length
-Write a function that returns the number of elements in a linked list_t list.
+```
 
-Prototype: size_t list_len(const list_t *h);
-Solution: 1-list_len.c
+## List length
 
+Write a function that returns the number of elements in a linked `list_t` list.
+
+* Prototype: `size_t list_len(const list_t *h);`
+
+**Solution:** [1-list_len.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/1-list_len.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 1-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -111,15 +122,20 @@ $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ gcc -Wall -pedantic -Wer
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ ./b 
 -> 2 elements
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$
-Add node
+```
+
+## Add node
+
 Write a function that adds a new node at the beginning of a list_t list.
 
-Prototype: list_t *add_node(list_t **head, const char *str);
-Return: the address of the new element, or NULL if it failed
-str needs to be duplicated
-You are allowed to use strdup
-Solution: 2-add_node.c
+* Prototype: `list_t *add_node(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 
+**Solution:** [2-add_node.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/2-add_node.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 2-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -198,15 +214,20 @@ $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ ./c
 [5] Asaia
 [9] Alexandro
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$
-Add node at the end
+```
+
+## Add node at the end
+
 Write a function that adds a new node at the end of a list_t list.
 
-Prototype: list_t *add_node_end(list_t **head, const char *str);
-Return: the address of the new element, or NULL if it failed
-str needs to be duplicated
-You are allowed to use strdup
-Solution: 3-add_node_end.c
+* Prototype: `list_t *add_node_end(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 
+**Solution:** [3-add_node_end.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/3-add_node_end.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 3-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -285,12 +306,17 @@ $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ ./d
 [6] Victor
 [6] Walton
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$
-Free list
-Write a function that frees a list_t list.
+```
 
-Prototype: void free_list(list_t *head);
-Solution: 4-free_list.c
+## Free list
 
+Write a function that frees a `list_t` list.
+
+* Prototype: `void free_list(list_t *head);`
+
+**Solution:** [4-free_list.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/4-free_list.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 4-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -339,12 +365,17 @@ $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ valgrind ./e
 ==3598== For counts of detected and suppressed errors, rerun with: -v
 ==3598== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$
-The Hare and the Tortoise
-Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
+```
 
-You are allowed to use the printf function
-Solution: 100-first.c
+## The Hare and the Tortoise
 
+Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the main function is executed.
+
+* You are allowed to use the `printf` function
+
+**Solution:** [100-first.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/100-first.c)
+
+```
 $ amonkeyprogrammer@ubuntu:~/0x12. Singly linked lists$ cat 100-main.c
 #include <stdio.h>
 
@@ -364,15 +395,21 @@ You're beat! and yet, you must allow,
 I bore my house upon my back!
 (A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)
 $ amonkeyprogrammer@ubuntu:~/$
-Real programmers can write assembly code in any language
-Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+```
 
-You are only allowed to use the printf function
-You are not allowed to use interrupts
-Your program will be compiled using nasm and gcc:
-Solution: 101-hello_holberton.asm
+## Real programmers can write assembly code in any language
 
+Write a 64-bit program in assembly that prints `Hello, Holberton`, followed by a new line.
+
+* You are only allowed to use the `printf` function
+* You are not allowed to use interrupts
+* Your program will be compiled using `nasm` and `gcc`:
+
+**Solution:** [101-hello_holberton.asm](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/101-hello_holberton.asm)
+
+```
 $ amonkeyprogrammer@ubuntu:~/$ nasm -f elf64 101-hello_holberton.asm && gcc 101-hello_holberton.o -o hello
 $ amonkeyprogrammer@ubuntu:~/$ ./hello 
 Hello, Holberton
 $ amonkeyprogrammer@ubuntu:~/$
+```
